@@ -1,11 +1,11 @@
+var poster = $('[href*="https://www.bloxcity.com/users/"]');
+var row = $('.row .valign-wrapper');
 
+for (var i = 0; i < row.length; i++) {
 
-var div document.getElementsByClassName("row valign-wrapper").getElementsByClassName("col s8 m8 l8 valign").getElementsByTagName("a")
-var urmomfat = document.getElementsByClassName("content-box")
-for(var i =0 i< div.length; i++){
-	if(div[i].innerHTML == "zanvaay"){
-	
-		urmomfat.removeChild(div[i].parent.parent.parent.parent)
-	}
-	
+   var current = row.eq(i).find(poster).first().text()
+   if (current != "" && current == "Zanvaay") {
+      row.eq(i).remove();
+   }
+
 }
