@@ -4,7 +4,7 @@
   "description": "urmumgay",
   "version": "1.0",
   "content_scripts": [{
-    "matches": ["https://www.bloxcity.com/forum/topic/1/BLOX-City-Central/*, https://www.bloxcity.com/forum/topic/1/BLOX-City-Central/2/"],
+    "matches": ["https://www.bloxcity.com/forum/topic/*"],
     "js": ["jquery.js", "urmom.js"],
     "run_at": "document_end",
     "all_frames": true
